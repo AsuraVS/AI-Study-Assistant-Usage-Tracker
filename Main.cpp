@@ -222,15 +222,15 @@ void showCategoryWithHighestUsage(const UsageRecord records[], int count) {
         highestTotal=writingTotal;
         highestCategory="Writing";
     }
-    else if(researchTotal>highestTotal) {
+    if(researchTotal>highestTotal) {
         highestTotal=researchTotal;
         highestCategory="Research";
     }
-    else if(studyTotal>highestTotal) {
+    if(studyTotal>highestTotal) {
         highestTotal=studyTotal;
         highestCategory="Study";
     }
-    else if(otherTotal>highestTotal) {
+    if(otherTotal>highestTotal) {
         highestTotal=otherTotal;
         highestCategory="Other";
     }
